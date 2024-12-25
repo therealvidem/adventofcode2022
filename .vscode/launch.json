@@ -1,0 +1,51 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Debug",
+			"program": "${workspaceFolder}/day7/target/debug/day7.exe",
+			"args": [],
+			"cwd": "${workspaceFolder}/day7",
+			"sourceLanguages": [
+				"rust"
+			],
+			"preLaunchTask": "Build Day7"
+		},
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Launch Day7",
+			"args": [],
+			"program": "${workspaceFolder}/day7/target/debug/day7.exe",
+			"windows": {
+				"program": "${workspaceFolder}/day7/target/debug/day7.exe",
+			},
+			"cwd": "${workspaceFolder}",
+			"stopOnEntry": false,
+			"sourceLanguages": [
+				"rust"
+			],
+			// "sourceMap": {
+			// 	"/rustc/*": "${env:HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust"
+			// }
+		},
+		{
+			"name": "(Windows) Launch Day7",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/day7/target/debug/day7.exe",
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"sourceFileMap": {
+				"/rustc/5e1a799842ba6ed4a57e91f7ab9435947482f7d8": "${env:USERPROFILE}/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/src/rust"
+			},
+			"symbolSearchPath": "https://msdl.microsoft.com/download/symbols",
+			"environment": []
+		}
+	]
+}

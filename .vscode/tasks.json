@@ -1,0 +1,14 @@
+{
+	"tasks": [
+		{
+			"taskName": "Build Day7",
+			"isBuildCommand": true,
+			"command": "cargo",
+			"args": [
+				"build",
+				"--manifest-path",
+				"./day7/Cargo.toml"
+			]
+		}
+	]
+}

@@ -1,0 +1,6 @@
+letter = { 'A'..'Z' }
+
+elf_crate = { "[" ~ letter ~ "]" }
+empty = { " "{3} }
+
+row = _{ (elf_crate | empty) ~ (" " ~ (elf_crate | empty))* }

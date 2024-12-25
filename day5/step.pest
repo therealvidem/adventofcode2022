@@ -1,0 +1,3 @@
+number = { ('0'..'9')+ }
+
+step = _{ "move" ~ " " ~ number ~ " " ~ "from" ~ " " ~ number ~ " " ~ "to" ~ " " ~ number }
